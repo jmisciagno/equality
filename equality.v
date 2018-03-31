@@ -1,7 +1,7 @@
 Definition eq' {A} (x y : A) : Prop :=
   forall (f : A -> Prop), f x <-> f y.
 
-Theorem eq'_is_eq {A} : forall (x y : A), eq x y <-> eq' x y.
+Definition eq'_is_eq {A} : forall (x y : A), eq x y <-> eq' x y.
   intros.
   split.
   intro H.
