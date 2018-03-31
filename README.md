@@ -3,12 +3,11 @@
 In Coq,
 
 ```
-(x : A) = (y : A).
+x = y
 ```
 
 is propositionally equivalent to
 
 ```
-forall {A : Type} (x y : A) (f : A -> Prop),
-  f x <-> f y.
+forall f, f x <-> f y.
 ```
